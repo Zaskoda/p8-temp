@@ -1,0 +1,17 @@
+.git
+.gitignore
+.gitlab*
+# Security: Exclude all .files from docker COPY
+.*
+# Allow .env.example for reference
+!.env.example
+LICENSE
+README.md
+CHANGELOG.md
+docker-compose.yml
+# These will be copied specially in the Dockerfile
+deployment/*
+!deployment/docker.nginx.conf
+!deployment/docker.env
+# Old Laravel install. Not needed.
+partavate-web

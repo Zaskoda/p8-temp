@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: partavate-website
+  namespace: partavate-websites
+  labels:
+    app: partavate-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: partavate-website
+  template:
+    metadata:
+      labels:
+        app: partavate-website
+    spec:
+      imagePullSecrets:
+        - name: partavate-gitlab-registry
+      containers:
+        - name: partavate-website
+          image: registry.gitlab.com/partavate/partavate-web/k8s-deploy:0.4
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /nginx-health
+              port: 80
+              scheme: HTTP
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 3
+          # resources:
+          #   limits:
+          #     memory: '250Mi'
+          #     cpu: '500m'
+          ports:
+            - containerPort: 80
+
+
+
+
