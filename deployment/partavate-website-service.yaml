@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: partavate-website
+  namespace: partavate-websites
+  labels:
+    app: partavate-website
+spec:
+  type: ClusterIP
+  selector:
+    app: partavate-website
+  ports:
+    - port: 80
