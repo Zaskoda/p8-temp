@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: partavate-website
-  namespace: partavate-websites
+  namespace: websites
   labels:
     app: partavate-website
 spec:
