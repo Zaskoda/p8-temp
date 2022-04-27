@@ -22,7 +22,7 @@
             <p class="p-1">
               Explore, trade, and build in decentralized space!
             </p>
-            <p class="p-1">Liberta Galactica!</p>
+            <p class="p-1"><a href="https://twitter.com/hashtag/LibertaGalactica?f=live" target="_blank">Liberta Galactica!</a></p>
           </div>
         </div>
       </div>
