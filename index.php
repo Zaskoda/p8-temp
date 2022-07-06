@@ -30,21 +30,11 @@
       <div class="collapse navbar-collapse" id="navbarToggler01">
         <a class="navbar-brand m-1 ml-2" href="#"><img src="partavate_logo_horizontal.png" height="40" id="menulogo"></a>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
             <a class="nav-link" href="#orbiter8"> Orbiter 8 </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#polydice"> PolyDice </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#partners">&#9702; Partners &#9702;</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">&#9702; About Us &#9702;</a>
-          </li>
-          <li class="nav-item">
-           <a class="nav-link" href="#contact">&#9702; Contact Us &#9702;</a>
-          </li>
+            <a class="nav-link" href="#partners"> Partners </a>
+            <a class="nav-link" href="#about"> About Us </a>
+           <a class="nav-link" href="#contact"> Contact Us </a>
         </ul>
       </div>
     </div>
