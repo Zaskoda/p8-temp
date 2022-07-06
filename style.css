@@ -23,9 +23,9 @@ a:hover {
   background: #000000aa;
 }
 
-div#top {
+div#biglogo {
   text-align: center;
-  padding-top: 96px;
+  padding-top: 128px;
 }
 
 div.darkcontent {
