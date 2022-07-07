@@ -20,7 +20,8 @@ spec:
         - name: partavate-gitlab-registry
       containers:
         - name: partavate-website
-          image: registry.gitlab.com/partavate/partavate-web/k8s-deploy:0.4
+          image: registry.gitlab.com/partavate/partavate-web/k8s-deploy:latest
+          imagePullPolicy: Always
           livenessProbe:
             failureThreshold: 3
             httpGet:

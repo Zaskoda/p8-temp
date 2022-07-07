@@ -17,7 +17,7 @@
         <div class="col-lg-6 col-xl-8 text-start">
           <div  class="p-1 pt-2">
             <p class="p-1">
-              <a href="https://Orbiter8.com">Orbiter 8</a>, is our casual Web 3
+              <a href="https://Orbiter8.com">Orbiter 8</a> is our casual Web 3
               game designed for the Ethereum Virtual Machine with a focus on
               first-in-class tokenomics integrity and a pure decentralization
               so the game can be played in perpetuity.
