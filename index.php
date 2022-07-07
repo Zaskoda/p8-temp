@@ -24,24 +24,17 @@
 <div class="fixed-top container">
   <nav class="navbar navbar-expand-lg navbar-dark menu-background">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler01" aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse  navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#"><img src="partavate_logo_horizontal.png"  height="32" id="menulogo"></a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#game">&#9702; Our Game &#9702;</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">&#9702; About Us &#9702;</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#partners">&#9702; Partners &#9702;</a>
-          </li>
-          <li class="nav-item">
-           <a class="nav-link" href="#contact">&#9702; Contact Us &#9702;</a>
-          </li>
+      <div class="collapse navbar-collapse" id="navbarToggler01">
+        <a class="navbar-brand m-1 ml-2" href="#"><img src="partavate_logo_horizontal.png" height="40" id="menulogo"></a>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <a class="nav-link" href="#orbiter8"> Orbiter 8 </a>
+            <a class="nav-link" href="#polydice"> PolyDice </a>
+            <a class="nav-link" href="#partners"> Partners </a>
+            <a class="nav-link" href="#about"> About Us </a>
+           <a class="nav-link" href="#contact"> Contact Us </a>
         </ul>
       </div>
     </div>
@@ -52,7 +45,7 @@
 
     <div class="p-4"></div>
 
-    <div id="top">
+    <div id="biglogo">
       <div class="p-4">
         <div class="row">
           <div class="col">
@@ -73,7 +66,7 @@
 
     <div class="p-4"></div>
 
-    <?php include('about-us.php') ?>
+    <?php include('polydice.php') ?>
 
     <div class="p-4"></div>
 
@@ -81,9 +74,14 @@
 
     <div class="p-4"></div>
 
+    <?php include('about-us.php') ?>
+
+    <div class="p-4"></div>
+
     <?php include('contact.php') ?>
 
     <div class="p-4"></div>
+
 
   </div>
 </div>

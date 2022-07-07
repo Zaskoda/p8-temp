@@ -10,25 +10,22 @@
         Partavate Studios is an independent studio<br> creating interactive media using emerging technology.
       </p>
       <div class="row d-flex align-items-end">
+        <div class="col-md-2"></div>
         <div class="col-md-4">
 
-          <img src="photo-koda.png" class="pl-4 pr-4 img-fluid" style="border-radius: 200px; border: 2px solid #ff88ddaa">
-          <div class="pt-2">Command</div>
-          <b class="text-white">Scott Dudley</b><br>
-          <small>Founder 0x0</small>
+          <img src="photo-koda.png" class="pl-4 pr-4 img-fluid" style="border-radius: 200px; border: 2px solid #ff88ddaa; padding: 6px">
+          <div class="pt-2">
+            <b class="text-white">Scott Dudley</b><br>
+            <small>Founder 0x0</small>
+          </div>
 
         </div>
         <div class="col-md-4">
-          <img src="photo-kepler.png" class="pl-4 pr-4 img-fluid" style="border-radius: 200px; border: 2px solid #ff88ddaa">
-          <div class="pt-2">Engineering</div>
-          <b class="text-white">Arthur Kepler</b><br>
-           <small>Cofounder 0x1</small>
-        </div>
-        <div class="col-md-4">
-          <img src="photo-sean.png" class="pl-4 pr-4 img-fluid" style="border-radius: 200px; border: 2px solid #ff88ddaa">
-          <div class="pt-2">Operations</div>
-          <b class="text-white">Sean Patchen</b><br>
-          <small>Cofounder 0x2</small>
+          <img src="photo-kepler.png" class="pl-4 pr-4 img-fluid" style="border-radius: 200px; border: 2px solid #ff88ddaa; padding: 6px">
+          <div class="pt-2">
+            <b class="text-white">Arthur Kepler</b><br>
+            <small>Cofounder 0x1</small>
+          </div>
         </div>
       </div>
     </div>
