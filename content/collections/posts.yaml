@@ -1,0 +1,16 @@
+title: Posts
+template: posts/show
+layout: layout
+mount: d2fcfad3-33da-4cbe-96d7-8401194b9af5
+revisions: false
+route: '/{mount}/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

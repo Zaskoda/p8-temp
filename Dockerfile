@@ -7,7 +7,7 @@ FROM wyveo/nginx-php-fpm:php81
 # Note: wyveo/nginx-php-fpm uses /usr/share/nginx/html/ as the web root. Symlink to /var/www
 # RUN ln -nsf /usr/share/nginx/html/ /var/www
 # Copy application code in local dir to the final image
-COPY . /var/www/public
+COPY . /var/www
 
 # Kubernetes secrets will fill in certain ENV values
 COPY ./deployment/docker.env /var/www/.env

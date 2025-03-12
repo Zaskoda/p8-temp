@@ -1,36 +1,43 @@
-# Partavate.com
+<p align="center"><img src="https://statamic.com/assets/branding/Statamic-Logo+Wordmark-Rad.svg" width="400" alt="Statamic Logo" /></p>
 
-# Deployment
+## About Statamic
 
-Deployment to Linode LKE Cluster
+Statamic is the flat-first, Laravel + Git powered CMS designed for building beautiful, easy to manage websites.
 
-```
-docker login
-# Give your GitLab Container Registry user/access token
-```
+> [!NOTE]
+> This repository contains the code for a fresh Statamic project that is installed via the Statamic CLI tool.
+>
+> The code for the Statamic Composer package itself can be found at the [Statamic core package repository][cms-repo].
 
-Build and push the local Docker image, replacing :latest. Optionally add a version tag.
 
-```
-docker build -t registry.gitlab.com/partavate/partavate-web/k8s-deploy:latest .
-docker push registry.gitlab.com/partavate/partavate-web/k8s-deploy:latest
-```
+## Learning Statamic
 
-Redeploy the application on Kubernetes. This will rebuild new pods and gracefully replace the running pods.
-Note, the new deployment replace the older until it's passing health checks, which should take about a minute.
+Statamic has extensive [documentation][docs]. We dedicate a significant amount of time and energy every day to improving them, so if something is unclear, feel free to open issues for anything you find confusing or incomplete. We are happy to consider anything you feel will make the docs and CMS better.
 
-```
-kubectl rollout restart -n websites deployment/partavate-website
-```
- 
-# First Time deployment / DR Rebuild
+## Support
 
-As above, but create the service first:
+We provide official developer support on [Statamic Pro](https://statamic.com/pricing) projects. Community-driven support is available on the [forum](https://statamic.com/forum) and in [Discord][discord].
 
-```
-kubectl apply -f deployment/partavate-website-service.yaml
-```
 
-And register the `IngressRoute` to the Load Balancer (Traefik) last.
+## Contributing
 
-See instructions in the `infrastructure` repo, where this route config lives.
+Thank you for considering contributing to Statamic! We simply ask that you review the [contribution guide][contribution] before you open issues or send pull requests.
+
+
+## Code of Conduct
+
+In order to ensure that the Statamic community is welcoming to all and generally a rad place to belong, please review and abide by the [Code of Conduct](https://github.com/statamic/cms/wiki/Code-of-Conduct).
+
+
+## Important Links
+
+- [Statamic Main Site](https://statamic.com)
+- [Statamic Documentation][docs]
+- [Statamic Core Package Repo][cms-repo]
+- [Statamic Migrator](https://github.com/statamic/migrator)
+- [Statamic Discord][discord]
+
+[docs]: https://statamic.dev/
+[discord]: https://statamic.com/discord
+[contribution]: https://github.com/statamic/cms/blob/master/CONTRIBUTING.md
+[cms-repo]: https://github.com/statamic/cms

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "../views";
+@source "../../content";
+
+body {
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+    font-family: 'Ubuntu', sans-serif;
+    background: #222 linear-gradient(-45deg, rgb(14, 7, 59) 0%, rgb(50, 0, 35) 100%);
+}
+a {
+  color: #ff88dd;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+
+/* Ensure the container has a height */
+.glide {
+    width: 100%;
+    position: relative; /* Needed for positioning controls */
+}
+
+/* Arrows */
+.glide__arrow {
+    color: white;
+    padding: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.glide__arrow:hover {
+}
+
+/* Pagination */
+.glide__bullet {
+    background-color: #88ddff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    z-index: 50;
+}
+
+.glide__bullet--active {
+    background-color: #ff88dd;
+}

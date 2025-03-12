@@ -1,0 +1,15 @@
+title: Projects
+template: projects/show
+layout: layout
+mount: aeea2036-e917-4be0-b059-224edd98d17a
+revisions: false
+route: '/{mount}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

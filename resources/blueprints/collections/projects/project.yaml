@@ -1,0 +1,97 @@
+title: Project
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: intro
+            field:
+              type: markdown
+              display: Introduction
+          -
+            handle: content
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Content
+              sets:
+                main:
+                  display: Main
+                  sets:
+                    image:
+                      display: Image
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: Image
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: feature_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Feature Image'
+      -
+        display: Links
+        fields:
+          -
+            handle: website
+            field:
+              type: text
+              display: Website
+          -
+            handle: github
+            field:
+              type: text
+              display: Github
+          -
+            handle: twitter
+            field:
+              type: text
+              display: Twitter
+          -
+            handle: youtube
+            field:
+              type: text
+              display: Youtube
+          -
+            handle: reddit
+            field:
+              type: text
+              display: Reddit
+          -
+            handle: discord
+            field:
+              type: text
+              display: Discord

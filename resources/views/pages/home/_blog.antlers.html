@@ -1,0 +1,32 @@
+<div class="my-4 mx-16">
+    <h1 class="text-2xl font-bold mb-8 text-center">Recent Blog Posts</h1>
+    <div class="grid lg:grid-cols-2 gap-8">
+        {{ collection:posts sort="date:desc" limit="2" }}
+        <article
+            class="flex flex-col md:flex-row items-center gap-6 p-6 border rounded-lg shadow-md"
+        >
+            {{ if feature_image }}
+            <img
+                src="{{ feature_image | url }}"
+                alt="{{ title }}"
+                class="w-full md:w-1/3 h-48 object-cover rounded-lg"
+            />
+            {{ /if }}
+            <div class="flex-1">
+                <h2 class="text-2xl font-bold mb-2">
+                    <a href="{{ url }}" class="text-blue-600 hover:underline"
+                        >{{ title }}</a
+                    >
+                </h2>
+                <p class="text-gray-500 mb-4">{{ date format="F j, Y" }}</p>
+                <p class="line-clamp-3">
+                    {{ content | strip_tags | truncate:150 }}
+                </p>
+            </div>
+        </article>
+        {{ /collection:posts }}
+    </div>
+    <div class="p-8 text-center">
+        <a href="/blog">Read more of our blog posts...</a>
+    </div>
+</div>
