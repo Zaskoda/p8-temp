@@ -6,6 +6,9 @@ module.exports = {
         'dark': '#0e073b',  
         'deep': '#320023',  
       },
+      textColor: {
+        'custom': '#ff88dd',
+      },
     }
   }
 }

@@ -2,9 +2,9 @@
 id: a5c49658-d1ce-4548-8fa9-bc0c384ae443
 blueprint: project
 title: 'Orbiter 8'
-feature_image: orbiter-8-splash.png
+feature_image: orbiter-8-open-source.png
 updated_by: 0bdb0d87-b119-43de-93ad-91c07b039d56
-updated_at: 1741749113
+updated_at: 1741916957
 intro: 'Orbiter 8 is our casual Web 3 game designed for the Ethereum Virtual Machine with a focus on first-in-class tokenomics integrity and a pure decentralization so the game can be played in perpetuity.'
 website: 'https://orbiter8.com'
 github: 'https://github.com/Partavate-Studios/orbiter8-prototype'
@@ -59,4 +59,6 @@ content:
       -
         type: text
         text: 'As Partavate Studios moves forward, the spirit of Orbiter 8 lives on, inspiring a renewed vision for a more robust, scalable, and impactful decentralized gaming ecosystem.'
+  -
+    type: paragraph
 ---

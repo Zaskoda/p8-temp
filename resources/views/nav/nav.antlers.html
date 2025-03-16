@@ -7,7 +7,7 @@
         </div>
 
         <!-- Hamburger Button -->
-        <button @click="open = !open" class="lg:hidden text-blue-300 hover:text-fuchsia-400 focus:outline-none" aria-label="Toggle menu">
+        <button @click="open = !open" class="lg:hidden text-white cursor-pointer hover:text-pink-300 focus:outline-none mr-4" aria-label="Toggle menu">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
@@ -21,10 +21,11 @@
                 </a>
             {{ /nav:top_nav }}
         </div>
+        <div class="bg-deep text-dark">test !</div>
     </div>
 
     <!-- Mobile Navigation Menu -->
-    <div x-show="open" @click.outside="open = false" x-transition class="lg:hidden w-full bg-black border-t border-pink-900 shadow-xl absolute top-16 left-0">
+    <div x-show="open" @click.outside="open = false" x-transition class="lg:hidden w-full bg-black border-y border-blue-900 shadow-xl absolute top-16 left-0">
         <div class="flex flex-col items-center py-4 space-y-2">
             {{ nav:top_nav }}
                 <a href="{{ url }}" class="w-full text-center py-2 text-blue-300 hover:text-fuchsia-400 transition-colors font-bold text-xl" style="background-color: rgba(8, 0, 16, 0.25);">

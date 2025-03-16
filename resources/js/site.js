@@ -1,11 +1,7 @@
 import Alpine from 'alpinejs';
 import Glide from '@glidejs/glide';
 import '@glidejs/glide/dist/css/glide.core.min.css';
-import * as Iconify from '@iconify/iconify';
-
-
-// Ensure Iconify initializes
-window.Iconify = Iconify;
+import 'iconify-icon';
 
 window.Alpine = Alpine;
 Alpine.start();

@@ -8,13 +8,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     background: #222 linear-gradient(-45deg, rgb(14, 7, 59) 0%, rgb(50, 0, 35) 100%);
 }
-a {
-  color: #ff88dd;
-  text-decoration: none;
-}
-a:hover {
-  color: #ffffff;
-}
 
 /* Ensure the container has a height */
 .glide {

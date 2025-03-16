@@ -4,5 +4,20 @@ blueprint: page
 title: Company
 author: 0bdb0d87-b119-43de-93ad-91c07b039d56
 updated_by: 0bdb0d87-b119-43de-93ad-91c07b039d56
-updated_at: 1741489534
+updated_at: 1741917485
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Partavate Studios is an independent studio'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: |-
+
+          creating interactive media using emerging technology.
 ---
