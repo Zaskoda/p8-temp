@@ -95,3 +95,8 @@ tabs:
             field:
               type: text
               display: Discord
+          -
+            handle: opensea
+            field:
+              type: text
+              display: OpenSea

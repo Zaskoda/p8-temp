@@ -4,10 +4,11 @@ blueprint: project
 title: Polydice
 intro: 'Dice you own. Dice you roll. The award winning PolyDice, a dice rolling dApp for the Polygon network.'
 updated_by: 0bdb0d87-b119-43de-93ad-91c07b039d56
-updated_at: 1741746378
+updated_at: 1742166969
 website: 'https://polydice.app/'
 github: 'https://github.com/Partavate-Studios/nft-tabletop-dice'
 feature_image: polydice-splash.png
+opensea: 'https://opensea.io/collection/polydice'
 content:
   -
     type: paragraph

@@ -4,5 +4,6 @@ blueprint: page
 title: Community
 author: 0bdb0d87-b119-43de-93ad-91c07b039d56
 updated_by: 0bdb0d87-b119-43de-93ad-91c07b039d56
-updated_at: 1741468063
+updated_at: 1742167450
+template: pages/community
 ---
