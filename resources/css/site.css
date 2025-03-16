@@ -1,7 +1,33 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
-@source "../views";
-@source "../../content";
+@config '../../tailwind.config.js';
+
+@layer base {
+    a {
+        color: theme('colors.pink.400');
+    }
+
+    a:hover {
+        color: theme('colors.white');
+    }
+}
+
+.prose {
+    color: theme('colors.blue.300');
+
+    a {
+        color: theme('colors.pink.400');
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: theme('colors.white');
+        text-decoration: none;
+    }
+
+    strong {
+        color: theme('colors.white');
+    }
+}
 
 body {
     @import url(https://fonts.googleapis.com/css?family=Ubuntu);
@@ -12,7 +38,8 @@ body {
 /* Ensure the container has a height */
 .glide {
     width: 100%;
-    position: relative; /* Needed for positioning controls */
+    position: relative;
+    /* Needed for positioning controls */
 }
 
 /* Arrows */
@@ -23,8 +50,7 @@ body {
     cursor: pointer;
 }
 
-.glide__arrow:hover {
-}
+.glide__arrow:hover {}
 
 /* Pagination */
 .glide__bullet {

@@ -1,15 +1,59 @@
-<article class="max-w-4xl mx-auto pb-12">
-    {{ if feature_image }}
-        <img src="{{ feature_image | url }}" alt="{{ title }}" class="w-full rounded-lg mb-8">
-    {{ /if }}
+{{ partial:components.two-column-page }}
 
-    <header class="mb-8">
-        <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
-        <p class="text-gray-500">{{ date format="F j, Y" }}</p>
-    </header>
+{{ slot:title }}
+{{ title }}
+{{ /slot:title }}
 
+{{ slot:content }}
+    <article class="pb-12">
+        <header class="mb-6">
+            <p class="text-gray-500">{{ date format="F j, Y" }}</p>
+        </header>
 
-    <section class="prose dark:prose-invert max-w-none ">
-        {{ content | markdown }}
-    </section>
-</article>
+        {{ if feature_image }}
+            <img src="{{ feature_image | url }}" alt="{{ title }}" class="w-full rounded-lg mb-8">
+        {{ /if }}
+
+        <section class="prose max-w-none">
+            {{ content | markdown }}
+        </section>
+    </article>
+{{ /slot:content }}
+
+{{ slot:sidebar }}
+    <!-- Featured Posts -->
+    <div>
+        <h2 class="text-xl font-semibold border-b pb-2 mb-4">Featured Posts</h2>
+        <ul class="space-y-4">
+            {{ collection:posts featured:is="true" limit="8" sort="date:desc" }}
+                <li>
+                    <a href="{{ url }}" class="block">
+                        {{ title }}
+                    </a>
+                    <p class="text-sm text-gray-500">{{ date format="F j, Y" }}</p>
+                </li>
+            {{ /collection:posts }}
+        </ul>
+    </div>
+
+    <!-- Recent Posts -->
+    <div>
+        <h2 class="text-xl font-semibold border-b pb-2 mb-4">Recent Posts</h2>
+        <ul class="space-y-4">
+            {{ collection:posts limit="8" sort="date:desc" }}
+                <li>
+                    <a href="{{ url }}" class="block">
+                        {{ title }}
+                    </a>
+                    <p class="text-sm text-gray-500">{{ date format="F j, Y" }}</p>
+                </li>
+            {{ /collection:posts }}
+        </ul>
+    </div>
+
+    <div>
+        {{ partial:components.social-media-sidebar }}
+    </div>
+{{ /slot:sidebar }}
+
+{{ /partial:components.two-column-page }}

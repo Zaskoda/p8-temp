@@ -58,3 +58,8 @@ tabs:
               container: assets
               type: assets
               display: 'Feature Image'
+          -
+            handle: featured
+            field:
+              type: toggle
+              display: Featured

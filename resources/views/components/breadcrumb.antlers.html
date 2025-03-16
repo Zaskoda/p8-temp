@@ -1,0 +1,19 @@
+<nav aria-label="breadcrumb" class="px-2 lg:px-6 py-4">
+    <ul class="flex items-center space-x-2 xl:text-lg">
+        <li>
+            <a href="/" class=""><iconify-icon icon="mdi:home" class="text-2xl -mb-1" /></iconify-icon></a>
+        </li>
+
+        {{ nav:breadcrumbs include_home="false" }}
+        <li>
+            <span class="font-bold inline-block">&gt;</span>
+            {{ if is_current }}
+            {{ title }}
+            {{ else }}
+            <a href="{{ url }}" class="inline-block ">{{ title }}</a>
+            {{ /if }}
+        </li>
+        {{ /nav:breadcrumbs }}
+
+    </ul>
+</nav>
