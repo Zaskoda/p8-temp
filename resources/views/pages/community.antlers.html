@@ -1,4 +1,4 @@
-{{ partial:components.page-with-sidebar }}
+{{ partial:components.page-solo }}
 
 {{ slot:title }}
 {{ title }}
@@ -6,7 +6,63 @@
 
 {{ slot:content }}
 
+<section>
+    <div class="text-center">
+        <div class="md:inline-block text-center md:w-1/2 lg:w-1/3 2xl:w-1/4 p-4">
+            {{ partial:components.click-container }}
+            {{ slot:url }}https://github.com/Partavate-Studios{{ /slot:url }}
+            {{ slot:content }}
+                <iconify-icon icon="mdi:github" class="text-[96px]"></iconify-icon>
+                <div class="text-3xl text-pink-400">GitHub</div>
+            {{ /slot:content }}
+            {{ /partial:components.click-container }}
+        </div>
+
+         <div class="md:inline-block text-center md:w-1/2 lg:w-1/3 2xl:w-1/4 p-4">
+            {{ partial:components.click-container }}
+            {{ slot:url }}https://x.com/partavate{{ /slot:url }}
+            {{ slot:content }}
+                <iconify-icon icon="mdi:twitter" class="text-[96px]"></iconify-icon>
+                <div class="text-3xl text-pink-400">GitHub</div>
+            {{ /slot:content }}
+            {{ /partial:components.click-container }}
+        </div>
+
+         <div class="md:inline-block text-center md:w-1/2 lg:w-1/3 2xl:w-1/4 p-4">
+            {{ partial:components.click-container }}
+            {{ slot:url }}https://x.com/partavate{{ /slot:url }}
+            {{ slot:content }}
+                <iconify-icon icon="mdi:youtube" class="text-[96px]"></iconify-icon>
+                <div class="text-3xl text-pink-400">YouTube</div>
+            {{ /slot:content }}
+            {{ /partial:components.click-container }}
+        </div>
+
+         <div class="md:inline-block text-center md:w-1/2 lg:w-1/3 2xl:w-1/4 p-4">
+            {{ partial:components.click-container }}
+            {{ slot:url }}https://www.linkedin.com/company/partavate-studios-llc/{{ /slot:url }}
+            {{ slot:content }}
+                <iconify-icon icon="mdi:linkedin" class="text-[96px]"></iconify-icon>
+                <div class="text-3xl text-pink-400">LinkedIn</div>
+            {{ /slot:content }}
+            {{ /partial:components.click-container }}
+        </div>
+
+         <div class="md:inline-block text-center md:w-1/2 lg:w-1/3 2xl:w-1/4 p-4">
+            {{ partial:components.click-container }}
+            {{ slot:url }}https://linktr.ee/partavate{{ /slot:url }}
+            {{ slot:content }}
+                <iconify-icon icon="mdi:link" class="text-[96px]"></iconify-icon>
+                <div class="text-3xl text-pink-400">LinkTree</div>
+            {{ /slot:content }}
+            {{ /partial:components.click-container }}
+        </div>
+    </div>
+
+</section>
+
+
 {{ content }}
 
 {{ /slot:content }}
-{{ /partial:components.page-with-sidebar }}
+{{ /partial:components.page-solo }}
